@@ -47,7 +47,7 @@ function draw() {
   for (var i = 0; i < obstacleGrp.length; i++) {
     if (obstacleGrp.get(i).isTouching(fighter)) {
       lives = lives - 1
-      obstacleGrp.get(i).destroy();
+      obstacleGrp.get(i).destroyEach();
     }
   }
   if (lives === 2) {
